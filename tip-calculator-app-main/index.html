@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+<form>  
+<div class="logo">  
+<img src="/images/logo.svg" alt="logo"/></div>
+<div class="cal_wrapper">
+<div class="left">  
+<div class="left_div bill">
+  <h5 class="head bill">Bill</h5>
+<input 
+id="bill_input" 
+type="tel" placeholder="0" value="" required onchange="alert(9)"/>
+</div>
+<div class="left_div tip">
+  <h5 class="head tip">Select Tip %</h5>
+  <div class="percentage">
+  <button class="perc" id="per_5" value="5">5%</button>
+  <button class="perc" id="per_10" value="10">10%</button>
+  <button class="perc" id="per_15">15%</button>
+  <button class="perc" id="per_25">25%</button>
+  <button class="perc" id="per_50">50%</button>
+  <button class="perc" id="per_cus">Custom</button>
+</div>
+</div>
+<div class="left_div">
+  <h5 class="head ppl">Number of People</h5>
+  <input id="ppl_input"type="numbers" placeholder="0">
+</div>
+</div>
+<div class="right">
+  
+  <div class="cal_tip">
+  <div><h5>Tip Amount</h5>
+  <h6>/ person</h6></div>
+<h1 class="calculation_pptip">$0.00</h1>
+</div>
+<div class="cal_total">
+  <div><h5>Total</h5>
+  <h6>/ person</h6></div>
+  <div><h1 class="calculation_pp">$0.00</h1></div>
+</div>
+
+<button id="clear">RESET</button>
+</div>
+</div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">sbarettino24</a>.
+  </div>
+</form>
+<script href="/main.js" src="/main.js"></script>
+</body>
+</html>
