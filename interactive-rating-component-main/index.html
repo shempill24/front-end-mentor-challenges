@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+
+  <!-- Rating state start -->
+<div class="wrapper">
+  <div class="img"><img src="/images/icon-star.svg"/></div>
+  <h3>How did we do?</h3>
+
+  <p>Please let us know how we did with your support request. All feedback is appreciated 
+  to help us improve our offering!</p>
+  <div class="rating">
+  <button class="rate hov">1</button> 
+  <button class="rate hov">2</button> 
+  <button class="rate hov">3</button> 
+  <button class="rate hov">4</button> 
+  <button class="rate hov">5</button> 
+
+</div>
+  <button id="submit" type="submit">SUBMIT</button>
+
+  <!-- Rating state end -->
+</div>
+
+  <!-- Thank you state start -->
+<div class="thanks_wrapper none">
+  <div class="thanks_img">
+    <img src="/images/illustration-thank-you.svg"/>
+  </div>
+  <div class="acknowledge"><h4 class="numbrating">You selected <span id="userrate"></span><!-- Add rating here --> out of 5
+  </h4></div>
+  <div class="thanks_copy"><h3>Thank you!</h3>
+
+  <p> We appreciate you taking the time to give a rating. If you ever need more support, 
+  don’t hesitate to get in touch!</p>
+</div>
+  <!-- Thank you state end -->
+
+</div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">sbarettino</a>.
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
