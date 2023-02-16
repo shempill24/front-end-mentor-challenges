@@ -9,7 +9,7 @@
 body{
     width: 100vw;
     height: 100vh;
-    background-image: url(/images/bg-desktop.png);
+    background-image: url(https://github.com/shempill24/front-end-mentor-challenges/blob/main/fylo-data-storage-component-master/images/bg-desktop.png?raw=true);
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: 100%;
